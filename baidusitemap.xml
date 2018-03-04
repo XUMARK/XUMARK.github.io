@@ -398,26 +398,6 @@
 
     
   <url>
-    <loc>edgar-xu.xyz/2017/12/%E6%90%AD%E5%BB%BAwordpress%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html</loc>
-    <lastmod>2018-02-25T03:39:24.216Z</lastmod>
-    <data>
-        <display>
-        <title>搭建wordpress个人博客</title>
-        <pubTime>2017-12-13T07:42:53.000Z</pubTime>
-        
-        <tag>wordpress</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术奇淫" url="edgar-xu.xyz/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>edgar-xu.xyz/2018/01/%E6%95%99%E4%BD%A0%E7%94%A8Python%E6%9D%A5%E7%8E%A9%E5%BE%AE%E4%BF%A1%E8%B7%B3%E4%B8%80%E8%B7%B3.html</loc>
     <lastmod>2018-02-25T03:39:24.216Z</lastmod>
     <data>
@@ -430,6 +410,26 @@
         <tag>Wechat</tag>
          
         <tag>跳一跳</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术奇淫" url="edgar-xu.xyz/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>edgar-xu.xyz/2017/12/%E6%90%AD%E5%BB%BAwordpress%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html</loc>
+    <lastmod>2018-02-25T03:39:24.216Z</lastmod>
+    <data>
+        <display>
+        <title>搭建wordpress个人博客</title>
+        <pubTime>2017-12-13T07:42:53.000Z</pubTime>
+        
+        <tag>wordpress</tag>
          
          
            
