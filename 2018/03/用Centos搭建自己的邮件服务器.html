@@ -126,7 +126,7 @@
 <meta property="og:site_name" content="檐下初逢‘Blog">
 <meta property="og:description" content="今天主要是闲的无聊，买的VPS不能白白的浪费掉啊，就搭个邮件服务来玩，使用的是Postfix和Dovecot来搭建，用Foxmail客户端登陆测试收信、发信均没问题先了解几个email有关的名词： MUA：用户代理端，即用户使用的写信、收信客户端软件MTA：邮件传送端，即常说的邮件服务器，用于转发、收取用户邮件。MDA：邮件代理端，相当于MUA和MTA的中间人，可用于过滤垃圾邮件。POP：邮局">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-23T11:52:29.242Z">
+<meta property="og:updated_time" content="2018-03-23T11:57:33.030Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【转载】用Centos搭建自己的邮件服务器">
 <meta name="twitter:description" content="今天主要是闲的无聊，买的VPS不能白白的浪费掉啊，就搭个邮件服务来玩，使用的是Postfix和Dovecot来搭建，用Foxmail客户端登陆测试收信、发信均没问题先了解几个email有关的名词： MUA：用户代理端，即用户使用的写信、收信客户端软件MTA：邮件传送端，即常说的邮件服务器，用于转发、收取用户邮件。MDA：邮件代理端，相当于MUA和MTA的中间人，可用于过滤垃圾邮件。POP：邮局">
@@ -739,7 +739,7 @@
 your browser does not support the video tag
 </video>-->
 <p>今天主要是闲的无聊，买的VPS不能白白的浪费掉啊，就搭个邮件服务来玩，使用的是Postfix和Dovecot来搭建，用Foxmail客户端登陆测试收信、发信均没问题<br>先了解几个email有关的名词：</p>
-<p>MUA：用户代理端，即用户使用的写信、收信客户端软件<br>MTA：邮件传送端，即常说的邮件服务器，用于转发、收取用户邮件。<br>MDA：邮件代理端，相当于MUA和MTA的中间人，可用于过滤垃圾邮件。<br>POP：邮局协议，用于MUA连接服务器收取用户邮件，通信端口110。<br>IMOP：互联网应用协议，功能较POP多，通信端口143。<br>SMTP：简单邮件传送协议，MUA连接MTA或MTA连接MTA发送邮件使用此协议，通信端口25。<br>postfix正是提供MTA功能的开源软件，是用来收发邮件的，它没有web页面，所以要配合本地的MUA（类似于foxmail，outlook之类的软件）来进行可视化的邮件管理操作。<br>Dovecot 是一个开源的IMAP 和POP3 邮件服务器，支持Linux/Unix 系统。作为IMAP和POP3服务器，Dovecot为邮件用户代理(MUA)提供了一种访问服务器上存储的邮件的方法(简单理解为检测用户的合法性)。但是，Dovecot并不负责从其他邮件服务器接收邮件。Dovecot只是将已经存储在邮件服务器上的邮件通过MUA显示出来。</p>
+<p>MUA：用户代理端，即用户使用的写信、收信客户端软件<br>MTA：邮件传送端，即常说的邮件服务器，用于转发、收取用户邮件。<br>MDA：邮件代理端，相当于MUA和MTA的中间人，可用于过滤垃圾邮件。<br><!--more--><br>POP：邮局协议，用于MUA连接服务器收取用户邮件，通信端口110。<br>IMOP：互联网应用协议，功能较POP多，通信端口143。<br>SMTP：简单邮件传送协议，MUA连接MTA或MTA连接MTA发送邮件使用此协议，通信端口25。<br>postfix正是提供MTA功能的开源软件，是用来收发邮件的，它没有web页面，所以要配合本地的MUA（类似于foxmail，outlook之类的软件）来进行可视化的邮件管理操作。<br>Dovecot 是一个开源的IMAP 和POP3 邮件服务器，支持Linux/Unix 系统。作为IMAP和POP3服务器，Dovecot为邮件用户代理(MUA)提供了一种访问服务器上存储的邮件的方法(简单理解为检测用户的合法性)。但是，Dovecot并不负责从其他邮件服务器接收邮件。Dovecot只是将已经存储在邮件服务器上的邮件通过MUA显示出来。</p>
 <p>好了下面就开始干吧</p>
 <p>安装Postfix和Dovecot<br>在安装之前，首先我们先卸载默认的sendmail（如果有的话），因为它是系统默认的MTA程序</p>
 <p>yum remove sendmail<br>然后就可以安装了：</p>
