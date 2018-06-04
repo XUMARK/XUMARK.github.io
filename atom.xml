@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="edgar-xu.xyz/"/>
-  <updated>2018-03-23T12:02:42.169Z</updated>
+  <updated>2018-06-04T11:08:10.249Z</updated>
   <id>edgar-xu.xyz/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[转载]SSR搭建教程</title>
+    <link href="edgar-xu.xyz/2018/06/%E8%BD%AC%E8%BD%BD-SSR%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B.html"/>
+    <id>edgar-xu.xyz/2018/06/转载-SSR搭建教程.html</id>
+    <published>2018-06-04T11:06:41.000Z</published>
+    <updated>2018-06-04T11:08:10.249Z</updated>
+    
+    <content type="html"><![CDATA[<p>世界那么大,我想去看看</p><a id="more"></a><!--<video src="比如放在七牛上的链接" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">your browser does not support the video tag</video>--><p>关于SSR应该很多人都不陌生。SSR其实是SS的升级版。接下来我要说的就是如何搭建SSR的服务器。</p><p>最下方有SSR客户端的下载链接,百度网盘可直接下载</p><h1 id="一-购买服务器，或者准备一台服务器"><a href="#一-购买服务器，或者准备一台服务器" class="headerlink" title="一.购买服务器，或者准备一台服务器"></a>一.购买服务器，或者准备一台服务器</h1><h4 id="（一）注意："><a href="#（一）注意：" class="headerlink" title="（一）注意："></a>（一）注意：</h4><ol><li>这一台服务器必须处于公网，拥有公网IP</li><li>这一台服务器必须可以访问外网（你知道为什么）<br>3.这一台服务器系统是Ubuntu或者CentOS系统（只要是Linux应该都行，但是我只会这两种系统的一些基础）<h4 id="（二）如何购买服务器"><a href="#（二）如何购买服务器" class="headerlink" title="（二）如何购买服务器"></a>（二）如何购买服务器</h4>这个我就不想多说了。服务器购买有一大把。我用的是阿里云香港服务器。<h5 id="关于阿里云服务器的一些注意："><a href="#关于阿里云服务器的一些注意：" class="headerlink" title="关于阿里云服务器的一些注意："></a>关于阿里云服务器的一些注意：</h5><h6 id="1-安全规则配置。"><a href="#1-安全规则配置。" class="headerlink" title="1. 安全规则配置。"></a>1. 安全规则配置。</h6>因为我第一次使用阿里云。所以第一次配置的时候没有成功还以为是配置错了。折腾了两天才发现原来是设置了安全规则过滤了外网对其的访问。<h6 id="2-没有更多了了"><a href="#2-没有更多了了" class="headerlink" title="2. 没有更多了了"></a>2. 没有更多了了</h6><h1 id="二-配置服务器"><a href="#二-配置服务器" class="headerlink" title="二. 配置服务器"></a>二. 配置服务器</h1><h3 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu:"></a>Ubuntu:</h3><h5 id="安装-wget-如果服务器本身已经安装了wget可以跳过这一步"><a href="#安装-wget-如果服务器本身已经安装了wget可以跳过这一步" class="headerlink" title="安装 wget,如果服务器本身已经安装了wget可以跳过这一步"></a>安装 wget,如果服务器本身已经安装了wget可以跳过这一步</h5>Ubuntu 16以上<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apt install wget</span><br><span class="line">```terminal</span><br><span class="line">Ubuntu 16之前</span><br></pre></td></tr></table></figure></li></ol><p>apt-get install wget<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CentOS</span><br><span class="line">```terminal</span><br><span class="line">yum -y install wget</span><br></pre></td></tr></table></figure></p><p>#####安装ssr配置脚本<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget -N --no-check-certificate https://softs.fun/Bash/ssr.sh</span><br><span class="line">chmod +x ssr.sh</span><br><span class="line">bash ssr.sh</span><br></pre></td></tr></table></figure></p><p>#####备用地址<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh</span><br><span class="line">chmod +x ssr.sh</span><br><span class="line">bash ssr.sh</span><br></pre></td></tr></table></figure></p><p>上方命令执行完毕之后效果应该是这样的：</p><p><img src="http://upload-images.jianshu.io/upload_images/6245842-c61be6d239fd67b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>接下来按照脚本提示输入对应的编号就可以了。</p><h5 id="安装SSR"><a href="#安装SSR" class="headerlink" title="安装SSR"></a>安装SSR</h5><p>根据提示，安装SSR，输入1</p><p><img src="http://upload-images.jianshu.io/upload_images/6245842-60fd159675c8042b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><h5 id="设置SSR服务器的端口"><a href="#设置SSR服务器的端口" class="headerlink" title="设置SSR服务器的端口"></a>设置SSR服务器的端口</h5><p>这个端口用于SSR客户端与SSR服务器建立链接的时候使用。默认2333.在这里我直接使用默认（直接敲回车）</p><p><img src="http://upload-images.jianshu.io/upload_images/6245842-66b14c7d81e6ded1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><h5 id="设置SSR链接时候的密码。"><a href="#设置SSR链接时候的密码。" class="headerlink" title="设置SSR链接时候的密码。"></a>设置SSR链接时候的密码。</h5><p>这里我设置的是1234</p><p><img src="http://upload-images.jianshu.io/upload_images/6245842-5cba2d1cd6acd98e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><h5 id="设置加密方式"><a href="#设置加密方式" class="headerlink" title="设置加密方式"></a>设置加密方式</h5><p>这里我为了能兼容SS，加密方式我选择的是3</p><p><img src="http://upload-images.jianshu.io/upload_images/6245842-18f33a5b3fac95ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><h5 id="设置协议插件"><a href="#设置协议插件" class="headerlink" title="设置协议插件"></a>设置协议插件</h5><p>同样为了兼容SS，我选择了1</p><p><img src="http://upload-images.jianshu.io/upload_images/6245842-ee8e3943d44afb5d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><h5 id="设置混淆插件"><a href="#设置混淆插件" class="headerlink" title="设置混淆插件"></a>设置混淆插件</h5><p>同样为了兼容SS，我选择了1</p><p><img src="http://upload-images.jianshu.io/upload_images/6245842-de7bbcd207d35201.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><h5 id="限制登陆设备个数"><a href="#限制登陆设备个数" class="headerlink" title="限制登陆设备个数"></a>限制登陆设备个数</h5><p>我不需要限制，所以直接回车</p><p><img src="http://upload-images.jianshu.io/upload_images/6245842-8c0fac4bca1c8a78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><h5 id="设置单个端口限速"><a href="#设置单个端口限速" class="headerlink" title="设置单个端口限速"></a>设置单个端口限速</h5><p>不需要，直接回车</p><p><img src="http://upload-images.jianshu.io/upload_images/6245842-ae7fe036f74bca1d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><h5 id="设置端口限速（所有端口的总速度，多端口模式下更能体现，个人使用一般是单端口，不需要理会）"><a href="#设置端口限速（所有端口的总速度，多端口模式下更能体现，个人使用一般是单端口，不需要理会）" class="headerlink" title="设置端口限速（所有端口的总速度，多端口模式下更能体现，个人使用一般是单端口，不需要理会）"></a>设置端口限速（所有端口的总速度，多端口模式下更能体现，个人使用一般是单端口，不需要理会）</h5><p>不需要，直接回车</p><p><img src="http://upload-images.jianshu.io/upload_images/6245842-b11c869d20319366.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>这个回车之后就会有一大堆乱七八糟的东西，等一等，让它自己配置。结束之后如图：</p><p><img src="http://upload-images.jianshu.io/upload_images/6245842-a0f12abc144bf3ac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>为了保密，我把IP，SS和SSR链接P掉了。毕竟我的服务器只是一个很小的服务器，不敢拿出来共享。在此说一声抱歉。</p><h1 id="三-配置加速"><a href="#三-配置加速" class="headerlink" title="三.配置加速"></a>三.配置加速</h1><p>这一步其实可以不要。但是为了从此之后不再忧心与SSR服务器的重启（服务器重启后SSR服务会被关闭，需要重新手动启动）和SSR代理网络速度更快，推荐大家往下看。</p><h5 id="安装谷歌BBR加速"><a href="#安装谷歌BBR加速" class="headerlink" title="安装谷歌BBR加速"></a>安装谷歌BBR加速</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh</span><br><span class="line">chmod +x bbr.sh</span><br><span class="line">./bbr.sh</span><br></pre></td></tr></table></figure><p>把上述的代码依次执行一遍，执行完之后是这样的</p><p><img src="http://upload-images.jianshu.io/upload_images/6245842-efa9703df1b9363b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>这事只需要按一下键盘上任意一个按键即可（按一下就行，不需要多按，等一下就会有反应了）<br>等安装完之后是这样的</p><p><img src="http://upload-images.jianshu.io/upload_images/6245842-5bf4cb40ea037fa8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>这里是在询问是否重启系统。我们输入y.回车之后会发现已经与服务器断开链接了。不必担心，这是服务器在重启。等一下再次连接即可。<br>如果想再次配置SSR，只需要输入命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash ssr.sh</span><br></pre></td></tr></table></figure></p><p>就会重新回到安装的界面</p><p><img src="http://upload-images.jianshu.io/upload_images/6245842-e5b70e039cb0b0d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>输入7即可根据需要自己修改配置了。怎么样，很简单吧。<br>不过服务器这东西一般人还是很难拥有的。感谢阅读。</p><p>SSR客户端百度网盘下载链接：<a href="https://pan.baidu.com/s/1mhLPJZU" target="_blank" rel="noopener">https://pan.baidu.com/s/1mhLPJZU</a></p><pre><code>&gt;本文转载自:https://github.com/JackiePenghe/SSR</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;世界那么大,我想去看看&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>【转载】用Centos搭建自己的邮件服务器</title>
@@ -478,33 +496,6 @@ your browser does not support the video tag
       <category term="Wechat" scheme="edgar-xu.xyz/tags/Wechat/"/>
     
       <category term="跳一跳" scheme="edgar-xu.xyz/tags/%E8%B7%B3%E4%B8%80%E8%B7%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>哪有什么不合群，只是他们的圈子里没有你</title>
-    <link href="edgar-xu.xyz/2017/12/%E5%93%AA%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%88%E7%BE%A4%EF%BC%8C%E5%8F%AA%E6%98%AF%E4%BB%96%E4%BB%AC%E7%9A%84%E5%9C%88%E5%AD%90%E9%87%8C%E6%B2%A1%E6%9C%89%E4%BD%A0.html"/>
-    <id>edgar-xu.xyz/2017/12/哪有什么不合群，只是他们的圈子里没有你.html</id>
-    <published>2017-12-31T14:01:29.000Z</published>
-    <updated>2018-02-26T05:44:56.927Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2543371-b47ab4102734a8a3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><h3 id="哪有什么不和群，只是他们的圈子里没有你"><a href="#哪有什么不和群，只是他们的圈子里没有你" class="headerlink" title="哪有什么不和群，只是他们的圈子里没有你"></a>哪有什么不和群，只是他们的圈子里没有你</h3><blockquote><p> 上了大学之后听的最多的一个词汇就是“不合群“。最开始听到这个词的时候是从我的现任班长那里，他和他的朋友说”走到后面总有人会不合群“。</p></blockquote><a id="more"></a><h4 id="那么什么叫合群呢？我们又为什么要合群？"><a href="#那么什么叫合群呢？我们又为什么要合群？" class="headerlink" title="那么什么叫合群呢？我们又为什么要合群？"></a><strong>那么什么叫合群呢？我们又为什么要合群？</strong></h4><p><br><br>以我目前对大众所认为的合群，我认为他们所认为的合群是像绵羊一样般大家做着一样的事情，没有谁搞”小动作“。每每听到他们说某某不合群的时候，我就能够想到他们所说的某某定是比他们更努力，更积极向上，不像他们一样只知道窝在寝室里打游戏，美其名曰“享受人生”，说着“都大学了，成绩不重要”这样自欺欺人的话。或许这样的人才是真正不合群的人。</p><h4 id="在我上高中的时候，也有那么一个“不合群的人”。"><a href="#在我上高中的时候，也有那么一个“不合群的人”。" class="headerlink" title="在我上高中的时候，也有那么一个“不合群的人”。"></a>在我上高中的时候，也有那么一个“不合群的人”。</h4><p>ta是那么的刻苦学习，让我们不少人感到极度的不适，甚至是反感。平时有什么活动也不积极参与，只顾着忙着自己的东西。大家在看电影的时候ta任在学习（此处无讽刺之意），在学校里都是早出晚归。</p><p>用大多数的人的话来说，ta就是一个不合群的人。不少的人会的背后酸ta，“这么努力有什么用，还不是看高考的成绩，就算成绩好又不一定混的好之类的话”。</p><h4 id="现在作为一个别人眼中的不合群的人"><a href="#现在作为一个别人眼中的不合群的人" class="headerlink" title="现在作为一个别人眼中的不合群的人"></a>现在作为一个别人眼中的不合群的人</h4><p>我意识到当初的我是多么的愚蠢，多么的幼稚。每个人都可以按照自己的想法来生活，又何必太在意世俗的眼光呢？不打游戏就是落时？认真度过大学就不是青春？在大学里早出晚归就是另类？？？</p><p>你认为别人不和群，别人可不这么认为，因为别人的圈子里根本就没有你。你所谓的”青春“在别人的眼中就是玩笑。”你对不合群的人的疏远，冷落，不过是你内心对自己努力不足的自我安慰。</p><p>道不同，不相为谋。每个人都有自己的想法，都有自己独特的追求。我们没有权利去批评任何一个人的追求。”我们不一样“ 最好的诠释了这句话。你自有你的青春，我自有我的未来。</p><h4 id="昔日寒山问拾得曰："><a href="#昔日寒山问拾得曰：" class="headerlink" title="昔日寒山问拾得曰："></a>昔日寒山问拾得曰：</h4><p>世间谤我、欺我、辱我、笑我、轻我、贱我、恶我、骗我、如何处治乎？<br>拾得云：只是忍他、让他、由他、避他、耐他、敬他、不要理他、再待几年你且看他  </p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2543371-b47ab4102734a8a3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;哪有什么不和群，只是他们的圈子里没有你&quot;&gt;&lt;a href=&quot;#哪有什么不和群，只是他们的圈子里没有你&quot; class=&quot;headerlink&quot; title=&quot;哪有什么不和群，只是他们的圈子里没有你&quot;&gt;&lt;/a&gt;哪有什么不和群，只是他们的圈子里没有你&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt; 上了大学之后听的最多的一个词汇就是“不合群“。最开始听到这个词的时候是从我的现任班长那里，他和他的朋友说”走到后面总有人会不合群“。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="感悟" scheme="edgar-xu.xyz/categories/%E6%84%9F%E6%82%9F/"/>
-    
-    
-      <category term="大学" scheme="edgar-xu.xyz/tags/%E5%A4%A7%E5%AD%A6/"/>
-    
-      <category term="原创" scheme="edgar-xu.xyz/tags/%E5%8E%9F%E5%88%9B/"/>
     
   </entry>
   
