@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo 密钥配置]]></title>
+    <url>%2F2018%2F10%2FHexo-%E5%AF%86%E9%92%A5%E9%85%8D%E7%BD%AE.html</url>
+    <content type="text"><![CDATA[实用于已经配置好了,现在又重新恢复的人.避免重复造轮子. 配置Git个人信息如果你之前已经配置好git个人信息，请跳过这一个 步骤，直接来到 1、设置Git的user name和email：(如果是第一次的话) 12git config --global user.name &quot;user name&quot;git config --global user.email &quot;your email&quot; 2、生成密钥 1ssh-keygen -t rsa -C &quot;your email&quot; 配置Deployment同样在_config.yml文件中，找到Deployment，然后按照如下修改： 1234deploy: type: git repo: git@github.com:yourname/yourname.github.io.git branch: master 写博客、发布文章新建一篇博客，执行下面的命令： 1hexo new post &quot;article title&quot; 这时候在我的 电脑的目录下 ~hexo\source\ _posts 将会看到 article title.md 文件 用MarkDown编辑器打开就可以编辑文章了。文章编辑好之后，运行生成、部署命令： 12hexo g // 生成hexo d // 部署 当然你也可以执行下面的命令，相当于上面两条命令的效果 1hexo d -g #在部署前先生成]]></content>
+      <categories>
+        <category>技术奇淫</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[[转载]SSR搭建教程]]></title>
     <url>%2F2018%2F06%2F%E8%BD%AC%E8%BD%BD-SSR%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B.html</url>
     <content type="text"><![CDATA[世界那么大,我想去看看 关于SSR应该很多人都不陌生。SSR其实是SS的升级版。接下来我要说的就是如何搭建SSR的服务器。 最下方有SSR客户端的下载链接,百度网盘可直接下载 一.购买服务器，或者准备一台服务器（一）注意： 这一台服务器必须处于公网，拥有公网IP 这一台服务器必须可以访问外网（你知道为什么）3.这一台服务器系统是Ubuntu或者CentOS系统（只要是Linux应该都行，但是我只会这两种系统的一些基础）（二）如何购买服务器这个我就不想多说了。服务器购买有一大把。我用的是阿里云香港服务器。关于阿里云服务器的一些注意：1. 安全规则配置。因为我第一次使用阿里云。所以第一次配置的时候没有成功还以为是配置错了。折腾了两天才发现原来是设置了安全规则过滤了外网对其的访问。2. 没有更多了了二. 配置服务器Ubuntu:安装 wget,如果服务器本身已经安装了wget可以跳过这一步Ubuntu 16以上123apt install wget```terminalUbuntu 16之前 apt-get install wget123CentOS```terminalyum -y install wget #####安装ssr配置脚本123wget -N --no-check-certificate https://softs.fun/Bash/ssr.shchmod +x ssr.shbash ssr.sh #####备用地址123wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.shchmod +x ssr.shbash ssr.sh 上方命令执行完毕之后效果应该是这样的： 接下来按照脚本提示输入对应的编号就可以了。 安装SSR根据提示，安装SSR，输入1 设置SSR服务器的端口这个端口用于SSR客户端与SSR服务器建立链接的时候使用。默认2333.在这里我直接使用默认（直接敲回车） 设置SSR链接时候的密码。这里我设置的是1234 设置加密方式这里我为了能兼容SS，加密方式我选择的是3 设置协议插件同样为了兼容SS，我选择了1 设置混淆插件同样为了兼容SS，我选择了1 限制登陆设备个数我不需要限制，所以直接回车 设置单个端口限速不需要，直接回车 设置端口限速（所有端口的总速度，多端口模式下更能体现，个人使用一般是单端口，不需要理会）不需要，直接回车 这个回车之后就会有一大堆乱七八糟的东西，等一等，让它自己配置。结束之后如图： 为了保密，我把IP，SS和SSR链接P掉了。毕竟我的服务器只是一个很小的服务器，不敢拿出来共享。在此说一声抱歉。 三.配置加速这一步其实可以不要。但是为了从此之后不再忧心与SSR服务器的重启（服务器重启后SSR服务会被关闭，需要重新手动启动）和SSR代理网络速度更快，推荐大家往下看。 安装谷歌BBR加速123wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.shchmod +x bbr.sh./bbr.sh 把上述的代码依次执行一遍，执行完之后是这样的 这事只需要按一下键盘上任意一个按键即可（按一下就行，不需要多按，等一下就会有反应了）等安装完之后是这样的 这里是在询问是否重启系统。我们输入y.回车之后会发现已经与服务器断开链接了。不必担心，这是服务器在重启。等一下再次连接即可。如果想再次配置SSR，只需要输入命令1bash ssr.sh 就会重新回到安装的界面 输入7即可根据需要自己修改配置了。怎么样，很简单吧。不过服务器这东西一般人还是很难拥有的。感谢阅读。 SSR客户端百度网盘下载链接：https://pan.baidu.com/s/1mhLPJZU &gt;本文转载自:https://github.com/JackiePenghe/SSR]]></content>
@@ -28,18 +39,6 @@
         <tag>python3</tag>
         <tag>python2</tag>
         <tag>win10</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[【视频】燃起来再出发]]></title>
-    <url>%2F2018%2F02%2F%E7%87%83%E8%B5%B7%E6%9D%A5%E5%86%8D%E5%87%BA%E5%8F%91.html</url>
-    <content type="text"><![CDATA[方太燃气创意广告 your browser does not support the video tag 短片分段讲述了4个人物的故事，手机厂商的老板在新款上市前夕，面对手机存在的问题，毅然选择推迟上市时间，做出完美的产品；年轻创业者们在为自己的产品争取投资的过程中，不畏旁人的鄙夷和不屑，年轻的女创业者径直将共享单车骑进投资人会议室，充满自信落落大方的为投资人讲述自己的创业方案。围棋天才小男孩和人工智能的围棋比赛也在如火如荼的进行中，最后围棋小将虽落败，结果不尽人意，但人工智能的胜利代表着人类历史进程的前进。 笃定的企业家、自信的创业者、围棋选手、举重的老人他们在遇到困难时，都用迎难之上的精神面貌去面对，他们心中都有一团火，面对并不如意的现状，他们并不屈服，而是用胜利者的姿态去征服挑战。 精彩的文案配合视频，节奏把握很好，营造出一种紧迫感，充满斗志昂扬之感。最后短片中的角色齐聚一堂，围坐在同一个饭桌上等待着吃方太厨具做出来的“燃料”。不由得让人惊叹广告设计的如此巧妙，一家人在社会中扮演不同角色，但拥有相同的性格，不屈服不畏惧，只因心中燃着一团火，然而这团火来自方太厨房的燃料。逻辑自洽，可以自圆其说。 选取的事例都源于现实生活，如共享单车创业、柯洁大战阿尔法狗，代入感强，事例选取巧妙也能引起观众好感、引起共鸣。 本文文字内容归本站版权所有，转载请注明来自V电影（vmovier.com）]]></content>
-      <categories>
-        <category>WE视频</category>
-      </categories>
-      <tags>
-        <tag>视频</tag>
-        <tag>励志</tag>
       </tags>
   </entry>
   <entry>

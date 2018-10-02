@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="edgar-xu.xyz/"/>
-  <updated>2018-06-04T11:08:10.249Z</updated>
+  <updated>2018-10-02T14:05:30.183Z</updated>
   <id>edgar-xu.xyz/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo 密钥配置</title>
+    <link href="edgar-xu.xyz/2018/10/Hexo-%E5%AF%86%E9%92%A5%E9%85%8D%E7%BD%AE.html"/>
+    <id>edgar-xu.xyz/2018/10/Hexo-密钥配置.html</id>
+    <published>2018-10-02T14:01:03.000Z</published>
+    <updated>2018-10-02T14:05:30.183Z</updated>
+    
+    <content type="html"><![CDATA[<p>实用于已经配置好了,现在又重新恢复的人.避免重复造轮子.<br><a id="more"></a></p><h3 id="配置Git个人信息"><a href="#配置Git个人信息" class="headerlink" title="配置Git个人信息"></a>配置Git个人信息</h3><p>如果你之前已经配置好git个人信息，请跳过这一个 步骤，直接来到</p><p>1、设置Git的user name和email：(如果是第一次的话)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;user name&quot;</span><br><span class="line">git config --global user.email &quot;your email&quot;</span><br></pre></td></tr></table></figure><p>2、生成密钥</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your email&quot;</span><br></pre></td></tr></table></figure><h3 id="配置Deployment"><a href="#配置Deployment" class="headerlink" title="配置Deployment"></a>配置Deployment</h3><p>同样在_config.yml文件中，找到Deployment，然后按照如下修改：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:yourname/yourname.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><hr><h2 id="写博客、发布文章"><a href="#写博客、发布文章" class="headerlink" title="写博客、发布文章"></a>写博客、发布文章</h2><p>新建一篇博客，执行下面的命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &quot;article title&quot;</span><br></pre></td></tr></table></figure><p>这时候在我的 电脑的目录下 ~hexo\source\ _posts 将会看到 article title.md 文件</p><p>用MarkDown编辑器打开就可以编辑文章了。文章编辑好之后，运行生成、部署命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g   // 生成</span><br><span class="line">hexo d   // 部署</span><br></pre></td></tr></table></figure><p>当然你也可以执行下面的命令，相当于上面两条命令的效果</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g #在部署前先生成</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;实用于已经配置好了,现在又重新恢复的人.避免重复造轮子.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术奇淫" scheme="edgar-xu.xyz/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
+    
+    
+      <category term="hexo" scheme="edgar-xu.xyz/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>[转载]SSR搭建教程</title>
@@ -85,30 +107,6 @@ your browser does not support the video tag
       <category term="python2" scheme="edgar-xu.xyz/tags/python2/"/>
     
       <category term="win10" scheme="edgar-xu.xyz/tags/win10/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【视频】燃起来再出发</title>
-    <link href="edgar-xu.xyz/2018/02/%E7%87%83%E8%B5%B7%E6%9D%A5%E5%86%8D%E5%87%BA%E5%8F%91.html"/>
-    <id>edgar-xu.xyz/2018/02/燃起来再出发.html</id>
-    <published>2018-02-27T02:34:08.000Z</published>
-    <updated>2018-02-28T06:20:58.282Z</updated>
-    
-    <content type="html"><![CDATA[<p>方太燃气创意广告<br><a id="more"></a></p><video src="https://yanxiachufeng-1255323032.cos.ap-shanghai.myqcloud.com/%E8%A7%86%E9%A2%91/%E6%96%B9%E5%A4%AA%E7%87%83%E6%83%85%E5%88%9B%E6%84%8F%E5%B9%BF%E5%91%8A%E3%80%8A%E7%87%83%E8%B5%B7%E6%9D%A5%E5%86%8D%E5%87%BA%E5%8F%91%E3%80%8B_V%E7%94%B5%E5%BD%B1.mp4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;"><br>your browser does not support the video tag<br></video><p>短片分段讲述了4个人物的故事，手机厂商的老板在新款上市前夕，面对手机存在的问题，毅然选择推迟上市时间，做出完美的产品；年轻创业者们在为自己的产品争取投资的过程中，不畏旁人的鄙夷和不屑，年轻的女创业者径直将共享单车骑进投资人会议室，充满自信落落大方的为投资人讲述自己的创业方案。围棋天才小男孩和人工智能的围棋比赛也在如火如荼的进行中，最后围棋小将虽落败，结果不尽人意，但人工智能的胜利代表着人类历史进程的前进。</p><p>笃定的企业家、自信的创业者、围棋选手、举重的老人他们在遇到困难时，都用迎难之上的精神面貌去面对，他们心中都有一团火，面对并不如意的现状，他们并不屈服，而是用胜利者的姿态去征服挑战。</p><p>精彩的文案配合视频，节奏把握很好，营造出一种紧迫感，充满斗志昂扬之感。最后短片中的角色齐聚一堂，围坐在同一个饭桌上等待着吃方太厨具做出来的“燃料”。不由得让人惊叹广告设计的如此巧妙，一家人在社会中扮演不同角色，但拥有相同的性格，不屈服不畏惧，只因心中燃着一团火，然而这团火来自方太厨房的燃料。逻辑自洽，可以自圆其说。</p><p>选取的事例都源于现实生活，如共享单车创业、柯洁大战阿尔法狗，代入感强，事例选取巧妙也能引起观众好感、引起共鸣。</p><blockquote><p>本文文字内容归本站版权所有，转载请注明来自V电影（vmovier.com）</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;方太燃气创意广告&lt;br&gt;
-    
-    </summary>
-    
-      <category term="WE视频" scheme="edgar-xu.xyz/categories/WE%E8%A7%86%E9%A2%91/"/>
-    
-    
-      <category term="视频" scheme="edgar-xu.xyz/tags/%E8%A7%86%E9%A2%91/"/>
-    
-      <category term="励志" scheme="edgar-xu.xyz/tags/%E5%8A%B1%E5%BF%97/"/>
     
   </entry>
   
