@@ -4,6 +4,45 @@
 
     
   <url>
+    <loc>edgar-xu.xyz/2018/03/Win10%E4%B8%8Bpython3%E5%92%8Cpython2%E5%90%8C%E6%97%B6%E5%AE%89%E8%A3%85%E5%B9%B6%E8%A7%A3%E5%86%B3pip%E5%85%B1%E5%AD%98%E9%97%AE%E9%A2%98.html</loc>
+    <lastmod>2018-10-02T14:11:09.808Z</lastmod>
+    <data>
+        <display>
+        <title>【转载】Win10下python3和python2同时安装并解决pip共存问题</title>
+        <pubTime>2018-03-04T10:03:37.000Z</pubTime>
+        
+        <tag>python3</tag>
+         
+        <tag>python2</tag>
+         
+        <tag>win10</tag>
+         
+         
+           
+             
+              <breadCrumb title="转载专区" url="edgar-xu.xyz/categories/%E8%BD%AC%E8%BD%BD%E4%B8%93%E5%8C%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>edgar-xu.xyz/2018/06/%E8%BD%AC%E8%BD%BD-SSR%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B.html</loc>
+    <lastmod>2018-10-02T14:10:11.515Z</lastmod>
+    <data>
+        <display>
+        <title>[转载]SSR搭建教程</title>
+        <pubTime>2018-06-04T11:06:41.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>edgar-xu.xyz/2018/10/Hexo-%E5%AF%86%E9%92%A5%E9%85%8D%E7%BD%AE.html</loc>
     <lastmod>2018-10-02T14:05:30.183Z</lastmod>
     <data>
@@ -38,21 +77,6 @@
              
               <breadCrumb title="技术奇淫" url="edgar-xu.xyz/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>edgar-xu.xyz/2018/06/%E8%BD%AC%E8%BD%BD-SSR%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B.html</loc>
-    <lastmod>2018-06-04T11:08:10.249Z</lastmod>
-    <data>
-        <display>
-        <title>[转载]SSR搭建教程</title>
-        <pubTime>2018-06-04T11:06:41.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
@@ -163,30 +187,6 @@
           
              
               <breadCrumb title="转载" url="edgar-xu.xyz/categories/%E6%84%9F%E6%82%9F/%E8%BD%AC%E8%BD%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>edgar-xu.xyz/2018/03/Win10%E4%B8%8Bpython3%E5%92%8Cpython2%E5%90%8C%E6%97%B6%E5%AE%89%E8%A3%85%E5%B9%B6%E8%A7%A3%E5%86%B3pip%E5%85%B1%E5%AD%98%E9%97%AE%E9%A2%98.html</loc>
-    <lastmod>2018-03-04T10:30:40.721Z</lastmod>
-    <data>
-        <display>
-        <title>【转载】Win10下python3和python2同时安装并解决pip共存问题</title>
-        <pubTime>2018-03-04T10:03:37.000Z</pubTime>
-        
-        <tag>python3</tag>
-         
-        <tag>python2</tag>
-         
-        <tag>win10</tag>
-         
-         
-           
-             
-              <breadCrumb title="转载专区" url="edgar-xu.xyz/categories/%E8%BD%AC%E8%BD%BD%E4%B8%93%E5%8C%BA/"/>
           
         </display>
     </data>
