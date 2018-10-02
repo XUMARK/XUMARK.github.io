@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="edgar-xu.xyz/"/>
-  <updated>2018-06-04T11:08:10.249Z</updated>
+  <updated>2018-10-02T13:21:58.735Z</updated>
   <id>edgar-xu.xyz/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="edgar-xu.xyz/2018/10/test.html"/>
+    <id>edgar-xu.xyz/2018/10/test.html</id>
+    <published>2018-10-02T13:20:44.000Z</published>
+    <updated>2018-10-02T13:21:58.735Z</updated>
+    
+    <content type="html"><![CDATA[<p>测试,测试<br><a id="more"></a></p><!--<video src="比如放在七牛上的链接" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">your browser does not support the video tag</video>-->]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;测试,测试&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>[转载]SSR搭建教程</title>
@@ -469,33 +487,6 @@ your browser does not support the video tag
     
     
       <category term="python2" scheme="edgar-xu.xyz/tags/python2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>教你用Python来玩微信跳一跳</title>
-    <link href="edgar-xu.xyz/2018/01/%E6%95%99%E4%BD%A0%E7%94%A8Python%E6%9D%A5%E7%8E%A9%E5%BE%AE%E4%BF%A1%E8%B7%B3%E4%B8%80%E8%B7%B3.html"/>
-    <id>edgar-xu.xyz/2018/01/教你用Python来玩微信跳一跳.html</id>
-    <published>2018-01-01T14:01:13.000Z</published>
-    <updated>2018-02-25T03:39:24.216Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/2543371-af7cd7006046cb52.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><h3 id="一：前言"><a href="#一：前言" class="headerlink" title="一：前言"></a>一：前言</h3><p>自从微信弄了一个叫跳一跳的小程序，我就沉迷其中无法自拔。但苦于那低的可怕的分数，我不禁动起了歪念头（斜眼笑）。</p><a id="more"></a><h3 id="二：原理说明"><a href="#二：原理说明" class="headerlink" title="二：原理说明"></a>二：原理说明</h3><p>将手机点击到《跳一跳》小程序界面；<br>用Adb 工具获取当前手机截图，并用adb将截图pull上来</p><blockquote><p>adb shell screencap -p /sdcard/1.png<br>    adb pull /sdcard/1.png .</p></blockquote><p>用matplot显示截图（已经图像识别处理）<br>用鼠标点击起始点和目标位置，计算像素距离 （已经图像识别处理）<br>根据像素距离，计算按压时间；<br>用Adb工具点击屏幕蓄力一跳；</p><blockquote><p>adb shell input swipe x y x y time</p></blockquote><h3 id="三：工具准备"><a href="#三：工具准备" class="headerlink" title="三：工具准备"></a>三：工具准备</h3><h4 id="1-adb工具"><a href="#1-adb工具" class="headerlink" title="1 adb工具"></a>1 <a href="https://adb.clockworkmod.com/" target="_blank" rel="noopener">adb工具</a></h4><h4 id="2-python3-2-7"><a href="#2-python3-2-7" class="headerlink" title="2 python3/2.7"></a>2 python3/2.7</h4><h4 id="3-自动游戏包"><a href="#3-自动游戏包" class="headerlink" title="3 自动游戏包"></a>3 <a href="https://github.com/wangshub/wechat_jump_game/archive/master.zip" target="_blank" rel="noopener">自动游戏包</a></h4><h3 id="四：开始"><a href="#四：开始" class="headerlink" title="四：开始"></a>四：开始</h3><h4 id="1：安装PIL"><a href="#1：安装PIL" class="headerlink" title="1：安装PIL"></a>1：安装PIL</h4><blockquote><p>pip install Pillow  </p></blockquote><h4 id="2-将手机连接到电脑后，打开开发者模式。打开cmd控制台，输入"><a href="#2-将手机连接到电脑后，打开开发者模式。打开cmd控制台，输入" class="headerlink" title="2:将手机连接到电脑后，打开开发者模式。打开cmd控制台，输入"></a>2:将手机连接到电脑后，打开开发者模式。打开cmd控制台，输入</h4><blockquote><p>adb devices</p></blockquote><p>它就会出现设备的id，如果没有出现请检查adb工具是否安装正确<br><img src="http://upload-images.jianshu.io/upload_images/2543371-eba0426422bcc090.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><h4 id="3：解压下载的自动游戏包，进入config文件夹，复制符合你手机屏幕分辨率的文件到wechat-jump-auto-py的同目录下"><a href="#3：解压下载的自动游戏包，进入config文件夹，复制符合你手机屏幕分辨率的文件到wechat-jump-auto-py的同目录下" class="headerlink" title="3：解压下载的自动游戏包，进入config文件夹，复制符合你手机屏幕分辨率的文件到wechat_jump_auto.py的同目录下"></a>3：解压下载的自动游戏包，进入config文件夹，复制符合你手机屏幕分辨率的文件到wechat_jump_auto.py的同目录下</h4><p><img src="http://upload-images.jianshu.io/upload_images/2543371-f952947cfa715173.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><h4 id="4：手机打开跳一跳并开始游戏，运行wechat-jump-auto-py，手机即可自动游戏了。"><a href="#4：手机打开跳一跳并开始游戏，运行wechat-jump-auto-py，手机即可自动游戏了。" class="headerlink" title="4：手机打开跳一跳并开始游戏，运行wechat_jump-auto.py，手机即可自动游戏了。"></a>4：手机打开跳一跳并开始游戏，运行wechat_jump-auto.py，手机即可自动游戏了。</h4><p>（wechat_jump.py 为手动版，用 Matplotlib 显示截图，用鼠标点击起始点和目标位置，计算像素距离）</p><h3 id="运行效果"><a href="#运行效果" class="headerlink" title="运行效果"></a>运行效果</h3><p><img src="http://upload-images.jianshu.io/upload_images/2543371-fa7f64dd1bd543ae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><p><img src="http://upload-images.jianshu.io/upload_images/2543371-935fc885be89cef2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><h5 id="大家的分数不要弄的太高了，不然很有可能会被清零"><a href="#大家的分数不要弄的太高了，不然很有可能会被清零" class="headerlink" title="大家的分数不要弄的太高了，不然很有可能会被清零"></a>大家的分数不要弄的太高了，不然很有可能会被清零</h5><h5 id="附反作弊侦察版（推荐"><a href="#附反作弊侦察版（推荐" class="headerlink" title="附反作弊侦察版（推荐)"></a><a href="http://www.mr-xu.me/微信跳一跳反作弊侦察版/" target="_blank" rel="noopener">附反作弊侦察版（推荐)</a></h5><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><blockquote><p><a href="https://github.com/wangshub/wechat_jump_game#%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4" target="_blank" rel="noopener">用 Python 来玩微信跳一跳</a><br><a href="http://blog.csdn.net/xiemanr/article/details/53929367" target="_blank" rel="noopener">ImportError: No module named PIL 错误</a></p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2543371-af7cd7006046cb52.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;一：前言&quot;&gt;&lt;a href=&quot;#一：前言&quot; class=&quot;headerlink&quot; title=&quot;一：前言&quot;&gt;&lt;/a&gt;一：前言&lt;/h3&gt;&lt;p&gt;自从微信弄了一个叫跳一跳的小程序，我就沉迷其中无法自拔。但苦于那低的可怕的分数，我不禁动起了歪念头（斜眼笑）。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="技术奇淫" scheme="edgar-xu.xyz/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
-    
-    
-      <category term="python3" scheme="edgar-xu.xyz/tags/python3/"/>
-    
-      <category term="Wechat" scheme="edgar-xu.xyz/tags/Wechat/"/>
-    
-      <category term="跳一跳" scheme="edgar-xu.xyz/tags/%E8%B7%B3%E4%B8%80%E8%B7%B3/"/>
     
   </entry>
   
