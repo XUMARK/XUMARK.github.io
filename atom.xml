@@ -5,9 +5,9 @@
   <subtitle>朝闻道，夕死可以</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="edgar-xu.xyz/"/>
+  <link href="xubiaolin.me/"/>
   <updated>2018-10-02T14:05:30.183Z</updated>
-  <id>edgar-xu.xyz/</id>
+  <id>xubiaolin.me/</id>
   
   <author>
     <name>Mark Xu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hexo 密钥配置</title>
-    <link href="edgar-xu.xyz/2018/10/Hexo-%E5%AF%86%E9%92%A5%E9%85%8D%E7%BD%AE.html"/>
-    <id>edgar-xu.xyz/2018/10/Hexo-密钥配置.html</id>
+    <link href="xubiaolin.me/2018/10/Hexo-%E5%AF%86%E9%92%A5%E9%85%8D%E7%BD%AE.html"/>
+    <id>xubiaolin.me/2018/10/Hexo-密钥配置.html</id>
     <published>2018-10-02T14:01:03.000Z</published>
     <updated>2018-10-02T14:05:30.183Z</updated>
     
@@ -31,17 +31,17 @@
     
     </summary>
     
-      <category term="技术奇淫" scheme="edgar-xu.xyz/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
+      <category term="技术奇淫" scheme="xubiaolin.me/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
     
     
-      <category term="hexo" scheme="edgar-xu.xyz/tags/hexo/"/>
+      <category term="hexo" scheme="xubiaolin.me/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>[转载]SSR搭建教程</title>
-    <link href="edgar-xu.xyz/2018/06/%E8%BD%AC%E8%BD%BD-SSR%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B.html"/>
-    <id>edgar-xu.xyz/2018/06/转载-SSR搭建教程.html</id>
+    <link href="xubiaolin.me/2018/06/%E8%BD%AC%E8%BD%BD-SSR%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B.html"/>
+    <id>xubiaolin.me/2018/06/转载-SSR搭建教程.html</id>
     <published>2018-06-04T11:06:41.000Z</published>
     <updated>2018-10-02T14:10:11.515Z</updated>
     
@@ -58,8 +58,8 @@
   
   <entry>
     <title>【转载】用Centos搭建自己的邮件服务器</title>
-    <link href="edgar-xu.xyz/2018/03/%E7%94%A8Centos%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8.html"/>
-    <id>edgar-xu.xyz/2018/03/用Centos搭建自己的邮件服务器.html</id>
+    <link href="xubiaolin.me/2018/03/%E7%94%A8Centos%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8.html"/>
+    <id>xubiaolin.me/2018/03/用Centos搭建自己的邮件服务器.html</id>
     <published>2018-03-23T11:39:05.000Z</published>
     <updated>2018-03-23T12:02:42.169Z</updated>
     
@@ -75,19 +75,19 @@ your browser does not support the video tag
     
     </summary>
     
-      <category term="技术奇淫" scheme="edgar-xu.xyz/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
+      <category term="技术奇淫" scheme="xubiaolin.me/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
     
     
-      <category term="转载，centos" scheme="edgar-xu.xyz/tags/%E8%BD%AC%E8%BD%BD%EF%BC%8Ccentos/"/>
+      <category term="转载，centos" scheme="xubiaolin.me/tags/%E8%BD%AC%E8%BD%BD%EF%BC%8Ccentos/"/>
     
-      <category term="vps" scheme="edgar-xu.xyz/tags/vps/"/>
+      <category term="vps" scheme="xubiaolin.me/tags/vps/"/>
     
   </entry>
   
   <entry>
     <title>【转载】Win10下python3和python2同时安装并解决pip共存问题</title>
-    <link href="edgar-xu.xyz/2018/03/Win10%E4%B8%8Bpython3%E5%92%8Cpython2%E5%90%8C%E6%97%B6%E5%AE%89%E8%A3%85%E5%B9%B6%E8%A7%A3%E5%86%B3pip%E5%85%B1%E5%AD%98%E9%97%AE%E9%A2%98.html"/>
-    <id>edgar-xu.xyz/2018/03/Win10下python3和python2同时安装并解决pip共存问题.html</id>
+    <link href="xubiaolin.me/2018/03/Win10%E4%B8%8Bpython3%E5%92%8Cpython2%E5%90%8C%E6%97%B6%E5%AE%89%E8%A3%85%E5%B9%B6%E8%A7%A3%E5%86%B3pip%E5%85%B1%E5%AD%98%E9%97%AE%E9%A2%98.html"/>
+    <id>xubiaolin.me/2018/03/Win10下python3和python2同时安装并解决pip共存问题.html</id>
     <published>2018-03-04T10:03:37.000Z</published>
     <updated>2018-10-02T14:11:09.808Z</updated>
     
@@ -99,21 +99,21 @@ your browser does not support the video tag
     
     </summary>
     
-      <category term="转载专区" scheme="edgar-xu.xyz/categories/%E8%BD%AC%E8%BD%BD%E4%B8%93%E5%8C%BA/"/>
+      <category term="转载专区" scheme="xubiaolin.me/categories/%E8%BD%AC%E8%BD%BD%E4%B8%93%E5%8C%BA/"/>
     
     
-      <category term="python3" scheme="edgar-xu.xyz/tags/python3/"/>
+      <category term="python3" scheme="xubiaolin.me/tags/python3/"/>
     
-      <category term="python2" scheme="edgar-xu.xyz/tags/python2/"/>
+      <category term="python2" scheme="xubiaolin.me/tags/python2/"/>
     
-      <category term="win10" scheme="edgar-xu.xyz/tags/win10/"/>
+      <category term="win10" scheme="xubiaolin.me/tags/win10/"/>
     
   </entry>
   
   <entry>
     <title>【视频】毕业是一场人生的洗礼</title>
-    <link href="edgar-xu.xyz/2018/02/%E6%AF%95%E4%B8%9A%E6%98%AF%E4%B8%80%E5%9C%BA%E4%BA%BA%E7%94%9F%E7%9A%84%E6%B4%97%E7%A4%BC.html"/>
-    <id>edgar-xu.xyz/2018/02/毕业是一场人生的洗礼.html</id>
+    <link href="xubiaolin.me/2018/02/%E6%AF%95%E4%B8%9A%E6%98%AF%E4%B8%80%E5%9C%BA%E4%BA%BA%E7%94%9F%E7%9A%84%E6%B4%97%E7%A4%BC.html"/>
+    <id>xubiaolin.me/2018/02/毕业是一场人生的洗礼.html</id>
     <published>2018-02-26T10:29:21.000Z</published>
     <updated>2018-02-28T06:21:52.822Z</updated>
     
@@ -125,19 +125,19 @@ your browser does not support the video tag
     
     </summary>
     
-      <category term="卓越·引领" scheme="edgar-xu.xyz/categories/%E5%8D%93%E8%B6%8A%C2%B7%E5%BC%95%E9%A2%86/"/>
+      <category term="卓越·引领" scheme="xubiaolin.me/categories/%E5%8D%93%E8%B6%8A%C2%B7%E5%BC%95%E9%A2%86/"/>
     
     
-      <category term="大学" scheme="edgar-xu.xyz/tags/%E5%A4%A7%E5%AD%A6/"/>
+      <category term="大学" scheme="xubiaolin.me/tags/%E5%A4%A7%E5%AD%A6/"/>
     
-      <category term="视频" scheme="edgar-xu.xyz/tags/%E8%A7%86%E9%A2%91/"/>
+      <category term="视频" scheme="xubiaolin.me/tags/%E8%A7%86%E9%A2%91/"/>
     
   </entry>
   
   <entry>
     <title>【视频】卓越·引领</title>
-    <link href="edgar-xu.xyz/2018/02/%E5%8D%93%E8%B6%8A%C2%B7%E5%BC%95%E9%A2%86.html"/>
-    <id>edgar-xu.xyz/2018/02/卓越·引领.html</id>
+    <link href="xubiaolin.me/2018/02/%E5%8D%93%E8%B6%8A%C2%B7%E5%BC%95%E9%A2%86.html"/>
+    <id>xubiaolin.me/2018/02/卓越·引领.html</id>
     <published>2018-02-26T08:32:02.000Z</published>
     <updated>2018-03-23T11:55:28.180Z</updated>
     
@@ -149,19 +149,19 @@ your browser does not support the video tag
     
     </summary>
     
-      <category term="卓越·引领" scheme="edgar-xu.xyz/categories/%E5%8D%93%E8%B6%8A%C2%B7%E5%BC%95%E9%A2%86/"/>
+      <category term="卓越·引领" scheme="xubiaolin.me/categories/%E5%8D%93%E8%B6%8A%C2%B7%E5%BC%95%E9%A2%86/"/>
     
     
-      <category term="视频" scheme="edgar-xu.xyz/tags/%E8%A7%86%E9%A2%91/"/>
+      <category term="视频" scheme="xubiaolin.me/tags/%E8%A7%86%E9%A2%91/"/>
     
-      <category term="卓越" scheme="edgar-xu.xyz/tags/%E5%8D%93%E8%B6%8A/"/>
+      <category term="卓越" scheme="xubiaolin.me/tags/%E5%8D%93%E8%B6%8A/"/>
     
   </entry>
   
   <entry>
     <title>你只是看起来很厉害</title>
-    <link href="edgar-xu.xyz/2018/02/%E4%BD%A0%E5%8F%AA%E6%98%AF%E7%9C%8B%E8%B5%B7%E6%9D%A5%E5%BE%88%E5%8E%89%E5%AE%B3.html"/>
-    <id>edgar-xu.xyz/2018/02/你只是看起来很厉害.html</id>
+    <link href="xubiaolin.me/2018/02/%E4%BD%A0%E5%8F%AA%E6%98%AF%E7%9C%8B%E8%B5%B7%E6%9D%A5%E5%BE%88%E5%8E%89%E5%AE%B3.html"/>
+    <id>xubiaolin.me/2018/02/你只是看起来很厉害.html</id>
     <published>2018-02-24T11:46:36.000Z</published>
     <updated>2018-02-25T03:39:24.214Z</updated>
     
@@ -174,17 +174,17 @@ your browser does not support the video tag
     
     </summary>
     
-      <category term="感悟" scheme="edgar-xu.xyz/categories/%E6%84%9F%E6%82%9F/"/>
+      <category term="感悟" scheme="xubiaolin.me/categories/%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="感悟" scheme="edgar-xu.xyz/tags/%E6%84%9F%E6%82%9F/"/>
+      <category term="感悟" scheme="xubiaolin.me/tags/%E6%84%9F%E6%82%9F/"/>
     
   </entry>
   
   <entry>
     <title>CFT技术隐藏文件</title>
-    <link href="edgar-xu.xyz/2018/02/CFT%E6%8A%80%E6%9C%AF%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6.html"/>
-    <id>edgar-xu.xyz/2018/02/CFT技术隐藏文件.html</id>
+    <link href="xubiaolin.me/2018/02/CFT%E6%8A%80%E6%9C%AF%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6.html"/>
+    <id>xubiaolin.me/2018/02/CFT技术隐藏文件.html</id>
     <published>2018-02-23T14:07:46.000Z</published>
     <updated>2018-06-04T11:13:33.967Z</updated>
     
@@ -198,17 +198,17 @@ your browser does not support the video tag
     
     </summary>
     
-      <category term="技术奇淫" scheme="edgar-xu.xyz/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
+      <category term="技术奇淫" scheme="xubiaolin.me/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
     
     
-      <category term="CFT" scheme="edgar-xu.xyz/tags/CFT/"/>
+      <category term="CFT" scheme="xubiaolin.me/tags/CFT/"/>
     
   </entry>
   
   <entry>
     <title>放屁都比北大清华响的学校</title>
-    <link href="edgar-xu.xyz/2018/01/%E6%94%BE%E5%B1%81%E9%83%BD%E6%AF%94%E5%8C%97%E5%A4%A7%E6%B8%85%E5%8D%8E%E5%93%8D%E7%9A%84%E5%AD%A6%E6%A0%A1.html"/>
-    <id>edgar-xu.xyz/2018/01/放屁都比北大清华响的学校.html</id>
+    <link href="xubiaolin.me/2018/01/%E6%94%BE%E5%B1%81%E9%83%BD%E6%AF%94%E5%8C%97%E5%A4%A7%E6%B8%85%E5%8D%8E%E5%93%8D%E7%9A%84%E5%AD%A6%E6%A0%A1.html"/>
+    <id>xubiaolin.me/2018/01/放屁都比北大清华响的学校.html</id>
     <published>2018-01-11T14:00:39.000Z</published>
     <updated>2018-03-21T05:30:29.911Z</updated>
     
@@ -222,19 +222,19 @@ your browser does not support the video tag
     
     </summary>
     
-      <category term="感悟" scheme="edgar-xu.xyz/categories/%E6%84%9F%E6%82%9F/"/>
+      <category term="感悟" scheme="xubiaolin.me/categories/%E6%84%9F%E6%82%9F/"/>
     
-      <category term="转载" scheme="edgar-xu.xyz/categories/%E6%84%9F%E6%82%9F/%E8%BD%AC%E8%BD%BD/"/>
+      <category term="转载" scheme="xubiaolin.me/categories/%E6%84%9F%E6%82%9F/%E8%BD%AC%E8%BD%BD/"/>
     
     
-      <category term="大学" scheme="edgar-xu.xyz/tags/%E5%A4%A7%E5%AD%A6/"/>
+      <category term="大学" scheme="xubiaolin.me/tags/%E5%A4%A7%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>用python2把图片转化为字符画</title>
-    <link href="edgar-xu.xyz/2018/01/%E7%94%A8python2%E6%8A%8A%E5%9B%BE%E7%89%87%E8%BD%AC%E5%8C%96%E4%B8%BA%E5%AD%97%E7%AC%A6%E7%94%BB.html"/>
-    <id>edgar-xu.xyz/2018/01/用python2把图片转化为字符画.html</id>
+    <link href="xubiaolin.me/2018/01/%E7%94%A8python2%E6%8A%8A%E5%9B%BE%E7%89%87%E8%BD%AC%E5%8C%96%E4%B8%BA%E5%AD%97%E7%AC%A6%E7%94%BB.html"/>
+    <id>xubiaolin.me/2018/01/用python2把图片转化为字符画.html</id>
     <published>2018-01-06T14:00:57.000Z</published>
     <updated>2018-02-25T03:39:24.217Z</updated>
     
@@ -247,17 +247,17 @@ your browser does not support the video tag
     
     </summary>
     
-      <category term="技术奇淫" scheme="edgar-xu.xyz/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
+      <category term="技术奇淫" scheme="xubiaolin.me/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
     
     
-      <category term="python2" scheme="edgar-xu.xyz/tags/python2/"/>
+      <category term="python2" scheme="xubiaolin.me/tags/python2/"/>
     
   </entry>
   
   <entry>
     <title>教你用Python来玩微信跳一跳</title>
-    <link href="edgar-xu.xyz/2018/01/%E6%95%99%E4%BD%A0%E7%94%A8Python%E6%9D%A5%E7%8E%A9%E5%BE%AE%E4%BF%A1%E8%B7%B3%E4%B8%80%E8%B7%B3.html"/>
-    <id>edgar-xu.xyz/2018/01/教你用Python来玩微信跳一跳.html</id>
+    <link href="xubiaolin.me/2018/01/%E6%95%99%E4%BD%A0%E7%94%A8Python%E6%9D%A5%E7%8E%A9%E5%BE%AE%E4%BF%A1%E8%B7%B3%E4%B8%80%E8%B7%B3.html"/>
+    <id>xubiaolin.me/2018/01/教你用Python来玩微信跳一跳.html</id>
     <published>2018-01-01T14:01:13.000Z</published>
     <updated>2018-02-25T03:39:24.216Z</updated>
     
@@ -270,21 +270,21 @@ your browser does not support the video tag
     
     </summary>
     
-      <category term="技术奇淫" scheme="edgar-xu.xyz/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
+      <category term="技术奇淫" scheme="xubiaolin.me/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
     
     
-      <category term="python3" scheme="edgar-xu.xyz/tags/python3/"/>
+      <category term="python3" scheme="xubiaolin.me/tags/python3/"/>
     
-      <category term="Wechat" scheme="edgar-xu.xyz/tags/Wechat/"/>
+      <category term="Wechat" scheme="xubiaolin.me/tags/Wechat/"/>
     
-      <category term="跳一跳" scheme="edgar-xu.xyz/tags/%E8%B7%B3%E4%B8%80%E8%B7%B3/"/>
+      <category term="跳一跳" scheme="xubiaolin.me/tags/%E8%B7%B3%E4%B8%80%E8%B7%B3/"/>
     
   </entry>
   
   <entry>
     <title>哪有什么不合群，只是他们的圈子里没有你</title>
-    <link href="edgar-xu.xyz/2017/12/%E5%93%AA%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%88%E7%BE%A4%EF%BC%8C%E5%8F%AA%E6%98%AF%E4%BB%96%E4%BB%AC%E7%9A%84%E5%9C%88%E5%AD%90%E9%87%8C%E6%B2%A1%E6%9C%89%E4%BD%A0.html"/>
-    <id>edgar-xu.xyz/2017/12/哪有什么不合群，只是他们的圈子里没有你.html</id>
+    <link href="xubiaolin.me/2017/12/%E5%93%AA%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%88%E7%BE%A4%EF%BC%8C%E5%8F%AA%E6%98%AF%E4%BB%96%E4%BB%AC%E7%9A%84%E5%9C%88%E5%AD%90%E9%87%8C%E6%B2%A1%E6%9C%89%E4%BD%A0.html"/>
+    <id>xubiaolin.me/2017/12/哪有什么不合群，只是他们的圈子里没有你.html</id>
     <published>2017-12-31T14:01:29.000Z</published>
     <updated>2018-02-26T05:44:56.927Z</updated>
     
@@ -299,19 +299,19 @@ your browser does not support the video tag
     
     </summary>
     
-      <category term="感悟" scheme="edgar-xu.xyz/categories/%E6%84%9F%E6%82%9F/"/>
+      <category term="感悟" scheme="xubiaolin.me/categories/%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="大学" scheme="edgar-xu.xyz/tags/%E5%A4%A7%E5%AD%A6/"/>
+      <category term="大学" scheme="xubiaolin.me/tags/%E5%A4%A7%E5%AD%A6/"/>
     
-      <category term="原创" scheme="edgar-xu.xyz/tags/%E5%8E%9F%E5%88%9B/"/>
+      <category term="原创" scheme="xubiaolin.me/tags/%E5%8E%9F%E5%88%9B/"/>
     
   </entry>
   
   <entry>
     <title>我和成电有个约会</title>
-    <link href="edgar-xu.xyz/2017/12/%E6%88%91%E5%92%8C%E6%88%90%E7%94%B5%E6%9C%89%E4%B8%AA%E7%BA%A6%E4%BC%9A.html"/>
-    <id>edgar-xu.xyz/2017/12/我和成电有个约会.html</id>
+    <link href="xubiaolin.me/2017/12/%E6%88%91%E5%92%8C%E6%88%90%E7%94%B5%E6%9C%89%E4%B8%AA%E7%BA%A6%E4%BC%9A.html"/>
+    <id>xubiaolin.me/2017/12/我和成电有个约会.html</id>
     <published>2017-12-13T14:01:41.000Z</published>
     <updated>2018-03-23T11:55:37.139Z</updated>
     
@@ -324,21 +324,21 @@ your browser does not support the video tag
     
     </summary>
     
-      <category term="感悟" scheme="edgar-xu.xyz/categories/%E6%84%9F%E6%82%9F/"/>
+      <category term="感悟" scheme="xubiaolin.me/categories/%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="大学" scheme="edgar-xu.xyz/tags/%E5%A4%A7%E5%AD%A6/"/>
+      <category term="大学" scheme="xubiaolin.me/tags/%E5%A4%A7%E5%AD%A6/"/>
     
-      <category term="原创" scheme="edgar-xu.xyz/tags/%E5%8E%9F%E5%88%9B/"/>
+      <category term="原创" scheme="xubiaolin.me/tags/%E5%8E%9F%E5%88%9B/"/>
     
-      <category term="旅游" scheme="edgar-xu.xyz/tags/%E6%97%85%E6%B8%B8/"/>
+      <category term="旅游" scheme="xubiaolin.me/tags/%E6%97%85%E6%B8%B8/"/>
     
   </entry>
   
   <entry>
     <title>搭建wordpress个人博客</title>
-    <link href="edgar-xu.xyz/2017/12/%E6%90%AD%E5%BB%BAwordpress%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html"/>
-    <id>edgar-xu.xyz/2017/12/搭建wordpress个人博客.html</id>
+    <link href="xubiaolin.me/2017/12/%E6%90%AD%E5%BB%BAwordpress%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html"/>
+    <id>xubiaolin.me/2017/12/搭建wordpress个人博客.html</id>
     <published>2017-12-13T07:42:53.000Z</published>
     <updated>2018-06-04T10:16:24.684Z</updated>
     
@@ -353,10 +353,10 @@ your browser does not support the video tag
     
     </summary>
     
-      <category term="技术奇淫" scheme="edgar-xu.xyz/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
+      <category term="技术奇淫" scheme="xubiaolin.me/categories/%E6%8A%80%E6%9C%AF%E5%A5%87%E6%B7%AB/"/>
     
     
-      <category term="wordpress" scheme="edgar-xu.xyz/tags/wordpress/"/>
+      <category term="wordpress" scheme="xubiaolin.me/tags/wordpress/"/>
     
   </entry>
   
