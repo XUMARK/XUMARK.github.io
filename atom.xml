@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="xubiaolin.me/"/>
-  <updated>2018-10-02T14:05:30.183Z</updated>
+  <updated>2018-10-03T13:21:43.426Z</updated>
   <id>xubiaolin.me/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>单链表实验</title>
+    <link href="xubiaolin.me/2018/10/%E5%8D%95%E9%93%BE%E8%A1%A8%E5%AE%9E%E9%AA%8C.html"/>
+    <id>xubiaolin.me/2018/10/单链表实验.html</id>
+    <published>2018-10-03T13:18:31.000Z</published>
+    <updated>2018-10-03T13:21:43.426Z</updated>
+    
+    <content type="html"><![CDATA[<p>此代码为数据结构单链表实验所用代码,暂时没有对其进行优化.<br><a id="more"></a></p><p>‘’’</p><p>#include<iostream></iostream></p><p>#include<string></string></p><p>#include<fstream></fstream></p><p>#include<iomanip><br>using namespace std;<br>typedef int Status;<br>//fstream file;</iomanip></p><p>//string head_1, head_2 , head_3;//文件中的标题（第一行）<br>int  length =0;</p><p>//学生信息<br>struct Student<br>{<br>    char id[80];//学号<br>    char name[80];//姓名<br>    int  score;//成绩<br>};<br>typedef struct LNode<br>{<br>    Student data;<br>    struct LNode <em>next;<br>} LNode, </em>LinkList;</p><p>//格式化输入信息<br>Student formatAddInfo() {<br>    Student newInfo;<br>    cout &lt;&lt; “请分别输入学生的学号,姓名,成绩” &lt;&lt; endl;<br>    cin &gt;&gt; newInfo.id &gt;&gt; newInfo.name &gt;&gt; newInfo.score;<br>    return newInfo;<br>}</p><p>//初始化链表<br>Status InitList(LinkList &amp;L)<br>{<br>    if (L!=NULL) {<br>        cout &lt;&lt; “链表已经初始化,请勿重复操作” &lt;&lt; endl;<br>        return -1;<br>    }<br>    L = new LNode;<br>    L-&gt;next = NULL;<br>    cout &lt;&lt; “初始化成功” &lt;&lt; endl;<br>    return 1;<br>}</p><p>//前插法创建单链表<br>Status CreateList_H(LinkList &amp;L)<br>{<br>    if (!L) {<br>        cout &lt;&lt; “链表不存在” &lt;&lt; endl;<br>        return -1;<br>    }<br>    LinkList p;<br>    cout &lt;&lt; “请输入要插入的数量” &lt;&lt; endl;<br>    int i;<br>    cin &gt;&gt; i;<br>    for (int j = 0; j &lt; i; j++) {<br>        p = new LNode;<br>        p-&gt;data = formatAddInfo();<br>        p-&gt;next = L-&gt;next;<br>        L-&gt;next = p;<br>        length++;<br>    }</p><pre><code>return 1;</code></pre><p>}<br>//后插法<br>Status CreateList_R(LinkList &amp;L)<br>{<br>    if (!L) {<br>        cout &lt;&lt; “链表不存在” &lt;&lt; endl;<br>        return -1;<br>}<br>    LinkList p, r;<br>    L = new LNode;<br>    L-&gt;next = NULL;<br>    r = L; //尾指针r指向头结点<br>    cout &lt;&lt; “请输入要插入的数量” &lt;&lt; endl;<br>    int m;<br>    cin &gt;&gt; m;<br>    while (m&gt;0)<br>    {<br>        p = new LNode;<br>        p-&gt;data = formatAddInfo();<br>        p-&gt;next = NULL;<br>        r-&gt;next = p;<br>        r = p;<br>        length++;<br>        m–;<br>    }<br>    return 1;</p><pre><code>}</code></pre><p>//遍历<br>Status TravelList(LinkList &amp;L)<br>{<br>    if (!L) {<br>        cout &lt;&lt; “链表不存在” &lt;&lt; endl;<br>        return -1;<br>    }<br>    if (length == 0) {<br>        cout &lt;&lt; “链表中没有数据” &lt;&lt; endl;<br>        return 0;<br>    }<br>    LinkList p = new LNode;<br>    p = L-&gt;next;</p><pre><code>while (p != NULL) {    cout &lt;&lt; &quot;姓名:&quot; &lt;&lt; setw(15) &lt;&lt; p-&gt;data.name &lt;&lt; setw(-8) &lt;&lt; &quot;学号:&quot; &lt;&lt; setw(20) &lt;&lt; p-&gt;data.id &lt;&lt; &apos;\t&apos; &lt;&lt; &quot;成绩:&quot; &lt;&lt; p-&gt;data.score &lt;&lt; endl;    p = p-&gt;next;}return 1;</code></pre><p>}</p><p>//输出指定位置的信息<br>Status LocateList(LinkList &amp;L)<br>{<br>    if (!L) {<br>        cout &lt;&lt; “链表不存在” &lt;&lt; endl;<br>        return -1;<br>    }<br>    int locate;<br>    LinkList p = new LNode;<br>    p = L;<br>    cout &lt;&lt; “请输入要查看的位置” &lt;&lt; endl;<br>    cin &gt;&gt; locate;<br>    if (locate &gt; length || locate &lt; 0) {<br>        cout &lt;&lt; “位置输入错误,请检查” &lt;&lt; endl;<br>        return -1;<br>    }<br>    for (int i = 0; i &lt; locate; i++) {<br>        p = p-&gt;next;<br>    }<br>    cout &lt;&lt; “姓名:” &lt;&lt; p-&gt;data.name &lt;&lt;”学号”&lt;<p->data.id &lt;&lt;”成绩”&lt;&lt; p-&gt;data.score;<br>    return 0;<br>}</p-></p><p>//查找<br>Status SearchList(LinkList &amp;L)<br>{<br>    if (!L) {<br>        cout &lt;&lt; “链表不存在” &lt;&lt; endl;<br>        return -1;<br>    }<br>    char name[20];<br>    cout &lt;&lt; “请输入你要查询的姓名” &lt;&lt; endl;<br>    cin &gt;&gt; name;<br>    LinkList p = new LNode;<br>    p = L-&gt;next;<br>    while (p != NULL) {<br>        if (strcmp(p-&gt;data.name, name) == 0) {<br>            cout &lt;&lt; “姓名:” &lt;&lt; p-&gt;data.name &lt;&lt; “    学号:” &lt;&lt; p-&gt;data.id &lt;&lt; “    成绩:” &lt;&lt; p-&gt;data.score;<br>            return 1;<br>        }<br>        p = p-&gt;next;<br>    }<br>    cout &lt;&lt; “未找到” &lt;&lt; endl;<br>    return -1;<br>}</p><p>//插入<br>Status InsertLinklist(LinkList &amp;L)<br>{<br>    if (!L) {<br>        cout &lt;&lt; “链表未初始化,先初始化” &lt;&lt; endl;<br>        return -1;<br>    }<br>    int locate;<br>    LinkList p = new LNode;<br>    LinkList q = new LNode;<br>    p = L;<br>    cout &lt;&lt; “请输入要插入的位置” &lt;&lt; endl;<br>    cin &gt;&gt; locate;<br>    if (locate &gt; length || locate &lt; 0) {<br>        cout &lt;&lt; “位置输入错误,请检查” &lt;&lt; endl;<br>        return -1;<br>    }<br>    for (int i = 0; i &lt; locate-1; i++) {<br>        p = p-&gt;next;<br>    }<br>    q-&gt;data = formatAddInfo();<br>    q-&gt;next = p-&gt;next;<br>    p-&gt;next = q;<br>    cout &lt;&lt; “插入成功” &lt;&lt; endl;<br>    return 0;    </p><p>}<br>//删除指定位置<br>Status DeleteList(LinkList &amp;L)<br>{<br>    if (!L) {<br>        cout &lt;&lt; “链表不存在” &lt;&lt; endl;<br>        return -1;<br>    }<br>    int locate;<br>    LinkList p = new LNode;<br>    LinkList q = new LNode;<br>    p = L;<br>    cout &lt;&lt; “请输入要删除的位置” &lt;&lt; endl;<br>    cin &gt;&gt; locate;<br>    if (locate &gt; length || locate &lt; 0) {<br>        cout &lt;&lt; “位置输入错误,请检查” &lt;&lt; endl;<br>        return -1;<br>    }<br>    for (int i = 0; i &lt; locate-1; i++) {<br>        p = p-&gt;next;<br>    }<br>    q = p-&gt;next;<br>    p-&gt;next = q-&gt;next;<br>    delete q;<br>    cout &lt;&lt; “删除成功” &lt;&lt; endl;<br>    return 0;<br>}<br>//统计<br>Status AnalyList(LinkList &amp;L)<br>{<br>    if (!L) {<br>        cout &lt;&lt; “链表未初始化!” &lt;&lt; endl;<br>        return -1;<br>    }<br>    cout &lt;&lt; “链表长度为:” &lt;&lt; length &lt;&lt; endl;<br>    return 0;<br>}<br>//销毁<br>Status DestroyList_L(LinkList  &amp;L)<br>{<br>    if (!L) {<br>        cout &lt;&lt; “链表不存在” &lt;&lt; endl;<br>        return -1;<br>    }<br>    LinkList p = new LNode;<br>    while (L)<br>    {<br>        p = L;<br>        L = L-&gt;next;<br>        delete  p;<br>    }<br>    if (!L) {<br>        cout &lt;&lt; “Success Delete” &lt;&lt; endl;<br>    }<br>    length = 0;<br>    return 1;<br>}</p><p>int  main()<br>{<br>    int chose;<br>    cout &lt;&lt; “请选择功能” &lt;&lt; endl;<br>    cout &lt;&lt; “———————\n”;<br>    cout &lt;&lt; “1. 初使化链表\n”;<br>    cout &lt;&lt; “2.前插法构建链表\n”;<br>    cout &lt;&lt; “3.后插法构建链表\n”;<br>    cout &lt;&lt; “4.显示指定位置内容\n”;<br>    cout &lt;&lt; “5.查找学生信息\n”;<br>    cout &lt;&lt; “6.遍历学生信息\n”;<br>    cout &lt;&lt; “7.插入学生信息\n”;<br>    cout &lt;&lt; “8.删除学生信息\n”;<br>    cout &lt;&lt; “9.销毁链表\n”;<br>    cout &lt;&lt; “10.链表长度” &lt;&lt; endl;<br>    cout &lt;&lt; “0. 退出\n\n”;<br>    cout &lt;&lt; “———————\n”;<br>    LinkList L=NULL;<br>    while (1) {<br>        cin &gt;&gt; chose;<br>        switch (chose)<br>        {<br>        case 1:InitList(L); break;<br>        case 2: CreateList_H(L); break;<br>        case 3: CreateList_R(L); break;<br>        case 4: LocateList(L); break;<br>        case 5: SearchList(L); break;<br>        case 6: TravelList(L); break;<br>        case 7: InsertLinklist(L); break;<br>        case 8: DeleteList(L); break;<br>        case 9: DestroyList_L(L); break;<br>        case 10: AnalyList(L); break;<br>        case 0: exit(0);</p><pre><code>    default:cout &lt;&lt; &quot;输入错误,请重试&quot; &lt;&lt; endl;        break;    }}return 0;</code></pre><p>}</p><p>‘’’<br><!--<video src="比如放在七牛上的链接" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">your browser does not support the video tag</video>--></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;此代码为数据结构单链表实验所用代码,暂时没有对其进行优化.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="C++代码" scheme="xubiaolin.me/categories/C-%E4%BB%A3%E7%A0%81/"/>
+    
+    
+      <category term="C++" scheme="xubiaolin.me/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo 密钥配置</title>
@@ -327,11 +349,11 @@ your browser does not support the video tag
       <category term="感悟" scheme="xubiaolin.me/categories/%E6%84%9F%E6%82%9F/"/>
     
     
+      <category term="旅游" scheme="xubiaolin.me/tags/%E6%97%85%E6%B8%B8/"/>
+    
       <category term="大学" scheme="xubiaolin.me/tags/%E5%A4%A7%E5%AD%A6/"/>
     
       <category term="原创" scheme="xubiaolin.me/tags/%E5%8E%9F%E5%88%9B/"/>
-    
-      <category term="旅游" scheme="xubiaolin.me/tags/%E6%97%85%E6%B8%B8/"/>
     
   </entry>
   
