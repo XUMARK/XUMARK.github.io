@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="xubiaolin.me/"/>
-  <updated>2018-10-03T13:24:47.943Z</updated>
+  <updated>2018-10-03T13:27:18.171Z</updated>
   <id>xubiaolin.me/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++代码</title>
+    <link href="xubiaolin.me/2018/10/C-%E4%BB%A3%E7%A0%81.html"/>
+    <id>xubiaolin.me/2018/10/C-代码.html</id>
+    <published>2018-10-03T13:27:18.000Z</published>
+    <updated>2018-10-03T13:27:18.171Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>单链表实验</title>
